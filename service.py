@@ -9,6 +9,7 @@ import time
 class AppServerSvc (win32serviceutil.ServiceFramework):
     _svc_name_ = "SyncCommAudioService"
     _svc_display_name_ = "SyncCommAudio Service"
+    _svc_description_ = "Fix Windows communication devices becoming unsynced from default devices"
 
     def __init__(self,args):
         win32serviceutil.ServiceFramework.__init__(self,args)
