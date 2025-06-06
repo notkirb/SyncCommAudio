@@ -16,7 +16,8 @@ An automated installer is planned, but is not yet ready. To install SyncCommAudi
 git clone https://github.com/notkirb/SyncCommAudio/
 cd SyncCommAudio
 C:\Python313\python.exe -m pip install -r requirements.txt
-C:\Python313\python.exe service.py install
+C:\Python313\python.exe service.py --startup=auto install
+C:\Python313\python.exe service.py start
 ```
 
 NOTE: Make sure you are NOT using Python from the Windows Store. The Windows Store version does not support services, and therefore cannot be used for SyncCommAudio. You can install it from [https://www.python.org/](https://www.python.org/) or from [Chocolatey](https://community.chocolatey.org/packages/python) by running `choco install python --pre` assuming Chocolatey is installed on your system.
