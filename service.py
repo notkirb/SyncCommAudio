@@ -19,6 +19,7 @@ class AppServerSvc (win32serviceutil.ServiceFramework):
         self.ReportServiceStatus(win32service.SERVICE_STOP_PENDING)
         win32event.SetEvent(self.hWaitStop)
         self.isStopped = True
+        self.ReportServiceStatus(win32service.SERVICE_STOPPED)
 
     def SvcDoRun(self):
         servicemanager.LogMsg(servicemanager.EVENTLOG_INFORMATION_TYPE,
