@@ -8,6 +8,7 @@ An automated installer is planned, but is not yet ready. To install SyncCommAudi
 ```
 git clone https://github.com/notkirb/SyncCommAudio/
 cd SyncCommAudio
+C:\Python313\python.exe -m pip install -r requirements.txt
 C:\Python313\python.exe service.py install
 ```
 
